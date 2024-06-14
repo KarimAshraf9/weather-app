@@ -58,12 +58,12 @@ function getTodayData(day, location) {
     `;
 }
 
-function getForecastDay(day) {
+function getForecastDay(day, tomorrow) {
   const date = new Date(day.date);
   const forecastWeekDay = date.toLocaleDateString("en-US", { weekday: "long" });
 
   return `
-        <div class="col-lg-4 p-0 tomorrow d-flex flex-column">
+        <div class="col-lg-4 p-0 ${tomorrow ? 'tomorrow' : 'afterTomorrow'} d-flex flex-column">
             <div class="forecastDate text-center">
                 <p class="mb-0">${forecastWeekDay}</p>
             </div>
@@ -101,8 +101,8 @@ function getData(queryParams) {
 
 function showData(response) {
   let cartoona = getTodayData(response.current, response.location);
-  cartoona += getForecastDay(response.forecast.forecastday[1]);
-  cartoona += getForecastDay(response.forecast.forecastday[2]);
+  cartoona += getForecastDay(response.forecast.forecastday[1], true);
+  cartoona += getForecastDay(response.forecast.forecastday[2], false);
 
   document.querySelector(".forecast .row").innerHTML = cartoona;
 }
