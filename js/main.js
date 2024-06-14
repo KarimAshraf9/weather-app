@@ -85,7 +85,7 @@ function getData(queryParams) {
   const data = new XMLHttpRequest();
   data.open(
     "get",
-    `http://api.weatherapi.com/v1/forecast.json?key=d9b110a8d13a48d6b24215512241306&q=${queryParams}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=d9b110a8d13a48d6b24215512241306&q=${queryParams}&days=3`
   );
   data.send();
 
