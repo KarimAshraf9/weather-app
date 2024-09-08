@@ -1,216 +1,193 @@
 @font-face {
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-    font-family: Roboto-Regular;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-family: Roboto-Regular;
 }
 
-:root{
-    --main-bg: #1e202b;
-    --main-text-color:rgb(191, 193, 200);
-    --sec-text-color: rgb(0, 154, 216);
+:root {
+  --main-bg: #1e202b;
+  --main-text-color: rgb(191, 193, 200);
+  --sec-text-color: rgb(0, 154, 216);
 }
 
-body{
-    font-family: Roboto-Regular; 
+body {
+  font-family: Roboto-Regular;
 }
 
-nav{
-    background-color: var(--main-bg);
+nav {
+  background-color: var(--main-bg);
 }
 
-#navbar .nav-item{
-    margin-left: 10px;
+#navbar .nav-item {
+  margin-left: 10px;
 }
 
-#navbar .nav-link{
-    padding: 5px 25px;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    color: white;
-    font-size: 14px;
-
-    /* --bs-nav-link-color: white */
-    /* --bs-navbar-active-color: red */
+#navbar .nav-link {
+  padding: 5px 25px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: white;
+  font-size: 14px;
 }
 
-/* #navbar .active{
-    --bs-navbar-active-color: red
-} */
-
-#navbar .nav-link:hover{
-    --hv-color:rgb(0, 154, 216);
-    border-color: var(--hv-color);
-    color: var(--hv-color);
+#navbar .nav-link:hover {
+  --hv-color: rgb(0, 154, 216);
+  border-color: var(--hv-color);
+  color: var(--hv-color);
 }
 
-#navbar .active{
-    --hv-color:rgb(0, 154, 216);
-    border-color: var(--hv-color);
-    color: var(--hv-color);
+#navbar .active {
+  --hv-color: rgb(0, 154, 216);
+  border-color: var(--hv-color);
+  color: var(--hv-color);
 }
 
-#navbar p{
-    font-size: 10px;
-    color: var(--main-text-color);
+#navbar p {
+  font-size: 10px;
+  color: var(--main-text-color);
 }
 
-
-#home{
-    padding: 70px 0;
-    background-color: var(--main-bg);
-    background-image: url('../images/banner.png');
-    background-repeat: no-repeat;
+#home {
+  padding: 70px 0;
+  background-color: var(--main-bg);
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
 }
 
-.userrInputSearch{
-    margin-bottom: 70px;
+.userrInputSearch {
+  margin-bottom: 70px;
 }
 
-
-#home input{
-    padding: 20px;
-    --bs-border-radius-pill:30px;
-    background-color: var(--main-bg);
+#home input {
+  padding: 20px;
+  --bs-border-radius-pill: 30px;
+  background-color: var(--main-bg);
 }
 
-#home input:focus{
-    box-shadow: none;
+#home input:focus {
+  box-shadow: none;
 }
 
-#home input::placeholder{
-    color: var(--main-text-color);
+#home input::placeholder {
+  color: var(--main-text-color);
 }
 
-#home button{
-    padding-right:40px;
-    padding-left:40px;
-    /* padding:10px 40px; */
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
+#home button {
+  padding-right: 40px;
+  padding-left: 40px;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
 }
 
-.forecastDate{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+.forecastDate {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-
-.forecastbody:first-child{
-    font-size: 18px;
+.forecastbody:first-child {
+  font-size: 18px;
 }
 
-.temp{
-    font-size: 90px;
+.temp {
+  font-size: 90px;
 }
 
-.forecastfoot li{
-    font-size: 14px;
-    font-weight: 300;
+.forecastfoot li {
+  font-size: 14px;
+  font-weight: 300;
 }
 
-.forecast{
-    color: var(--main-text-color);
+.forecast {
+  color: var(--main-text-color);
 }
 
-.forecast .info{
-    color: var(--sec-text-color);
-    font-size: 14px;
+.forecast .info {
+  color: var(--sec-text-color);
+  font-size: 14px;
 }
 
-.forecast .today{
+.forecast .today {
   background-color: #323544;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.forecast .tomorrow{
-    background-color: #262936;
+.forecast .tomorrow {
+  background-color: #262936;
 }
-.forecast .afterTomorrow{
-    background-color: #323544;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-
-footer{
-    padding: 50px 0;
-    background-color: #262936;
+.forecast .afterTomorrow {
+  background-color: #323544;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-
-
-
-footer input.form-control{
-    padding: 20px;
-    --bs-border-radius-pill:30px;
-    background-color:var(--main-bg);
+footer {
+  padding: 50px 0;
+  background-color: #262936;
 }
 
-footer input.form-control:focus{
-    background-color:var(--main-bg);
-    box-shadow: none;
+footer input.form-control {
+  padding: 20px;
+  --bs-border-radius-pill: 30px;
+  background-color: var(--main-bg);
 }
 
-footer input.form-control::placeholder{
-    color: var(--main-text-color);
+footer input.form-control:focus {
+  background-color: var(--main-bg);
+  box-shadow: none;
 }
 
-footer button.btn{
-    padding-right:20px;
-    padding-left:20px;
-    /* padding:10px 40px; */
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
+footer input.form-control::placeholder {
+  color: var(--main-text-color);
 }
 
-footer p{
-    color: var(--main-text-color);
-    font-size: 14px;
+footer button.btn {
+  padding-right: 20px;
+  padding-left: 20px;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
 }
 
-
-footer a{
-    width: 40px;
-    height: 40px;
-    color: rgb(0, 154, 216);
-    font-size: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5px;
-    background-color: var(--main-bg);
-    transition: all 0.3s ease;
+footer p {
+  color: var(--main-text-color);
+  font-size: 14px;
 }
 
-footer a:hover{
-    background-color: rgb(28, 165, 220);
-    color: white;
+footer a {
+  width: 40px;
+  height: 40px;
+  color: rgb(0, 154, 216);
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  background-color: var(--main-bg);
+  transition: all 0.3s ease;
 }
 
-
-
-.test{
-    height: 400px;
-    background-color: red;
-    display: table;
-    width: 100%;
+footer a:hover {
+  background-color: rgb(28, 165, 220);
+  color: white;
 }
 
-.test1{
-    /* height: 400px; */
-    background-color: orange;
-    display: table-row;
-    height: 0;
-
+.test {
+  height: 400px;
+  background-color: red;
+  display: table;
+  width: 100%;
 }
 
-.test2{
-    /* height: 400px; */
-    background-color: blue;
-    display: table-row;
+.test1 {
+  background-color: orange;
+  display: table-row;
+  height: 0;
+}
 
+.test2 {
+  background-color: blue;
+  display: table-row;
 }

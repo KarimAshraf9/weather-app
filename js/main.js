@@ -63,7 +63,9 @@ function getForecastDay(day, tomorrow) {
   const forecastWeekDay = date.toLocaleDateString("en-US", { weekday: "long" });
 
   return `
-        <div class="col-lg-4 p-0 ${tomorrow ? 'tomorrow' : 'afterTomorrow'} d-flex flex-column">
+        <div class="col-lg-4 p-0 ${
+          tomorrow ? "tomorrow" : "afterTomorrow"
+        } d-flex flex-column">
             <div class="forecastDate text-center">
                 <p class="mb-0">${forecastWeekDay}</p>
             </div>
@@ -71,8 +73,12 @@ function getForecastDay(day, tomorrow) {
                 <figure class="h-100 mb-0">
                     <img src="${day.day.condition.icon}" class="mb-4" alt="">
                     <figcaption>
-                        <p class="tempMax fw-bold mb-1 text-white fs-4">${day.day.maxtemp_c} &#8451</p>
-                        <p class="tempMin fw-light">${day.day.mintemp_c} &#8451</p>
+                        <p class="tempMax fw-bold mb-1 text-white fs-4">${
+                          day.day.maxtemp_c
+                        } &#8451</p>
+                        <p class="tempMin fw-light">${
+                          day.day.mintemp_c
+                        } &#8451</p>
                         <p class="fw-light info">${day.day.condition.text}</p>
                     </figcaption>
                 </figure>
@@ -106,4 +112,3 @@ function showData(response) {
 
   document.querySelector(".forecast .row").innerHTML = cartoona;
 }
-
